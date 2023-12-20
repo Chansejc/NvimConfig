@@ -17,6 +17,13 @@ vim.keymap.set("n", "<leader>fr", ":%s/")
 --Exit current file but stay in neovim
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
+--[[
+For opening code folds 
+use "zr" to open all folds
+use "zr" to open one fold
+use "zc" to close one fold
+--]]
+
 --These maps are for centering and uncentering scroll
 vim.keymap.set("n", "<leader>c", function()
     vim.keymap.set("n", "j", "jzz")

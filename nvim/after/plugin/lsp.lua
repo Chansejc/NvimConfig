@@ -3,7 +3,7 @@ local lsp = require("lsp-zero")
 lsp.preset("recommended")
 
 lsp.ensure_installed({
-  'pyright','tsserver'
+  'pyright','tsserver', 'rust_analyzer'
 })
 
 -- Fix Undefined global 'vim'

@@ -11,15 +11,16 @@ return require('packer').startup(function(use)
         requires = { {'nvim-lua/plenary.nvim'} }
     }
 --This is for Colors.lua
-    use({'folke/tokyonight.nvim', as = 'tokyonight-storm'})
-    use({ 'ribru17/bamboo.nvim', as = 'bamboo' })
-    use({ 'AlexvZyl/nordic.nvim', as = 'nordic'})
-    use({ 'luisiacc/gruvbox-baby', as = 'gruvbox'})
+    use({ 'devsjc/vim-jb', as = 'jb'})
+    use({ 'neanias/everforest-nvim', as = 'everforest'})
+    use({ 'rafi/awesome-vim-colorschemes' })
 
 -- Lualine for the tagline at the bottom
     use({'nvim-lualine/lualine.nvim',
     requires = { 'nvim-tree/nvim-web-devicons', opt = true }
     })
+-- Use tpope/vim-commentary
+    use({ 'tpope/vim-commentary' })
 -- Use TMUX-navigator
     use( 'christoomey/vim-tmux-navigator' )
 -- Helpful things for more complicated projects
